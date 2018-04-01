@@ -115,8 +115,24 @@
                     android:text="Alta" />
 
             </RadioGroup>
-
-            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/altura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Altura: (cm)"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OK!"
+                />
 
         </LinearLayout>
     </ScrollView>
