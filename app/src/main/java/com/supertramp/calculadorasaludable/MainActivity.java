@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     Button registros_anteriores,ok;
     EditText etnombre, etedad,etpeso,altura;
-    Rad
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
