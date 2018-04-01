@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         registros_anteriores = (Button) findViewById(R.id.registros_anteriores);
 
         SharedPreferences preferences = getSharedPreferences("config", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+
         String datos_existes = preferences.getString("datos_existentes", null);
 
         if(datos_existes == null){
