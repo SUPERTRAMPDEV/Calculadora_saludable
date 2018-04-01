@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         String datos_existes = preferences.getString("datos_existentes", null);
 
         if(datos_existes == null){
-            registros_anteriores.
+            registros_anteriores.setVisibility(View.GONE);
         }
 
 
