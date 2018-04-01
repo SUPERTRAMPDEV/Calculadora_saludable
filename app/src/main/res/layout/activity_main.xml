@@ -4,12 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.supertramp.calculadorasaludable.MainActivity">
+    tools:context="com.supertramp.calculadorasaludable.MainActivity"
+    android:orientation="vertical">
+
 
     <Button
         android:id="@+id/registros_anteriores"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="Registros Anteriores" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+ <EditText
+     android:id="@+id/et_nombre"
+     android:hint="Nombre:"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_edad"
+        android:hint="Edad:"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_peso"
+        android:hint="Peso: (kg)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sexo:"
+        android:textSize="15dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/sexo_hombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hombre" />
+
+        <RadioButton
+            android:id="@+id/sexo_mujer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mujer" />
+    </RadioGroup>
+
 </LinearLayout>
