@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
    private RadioGroup radioGroupsexo, radioGroupAf;
    private RadioButton sr,afr;
    private String nombre,edad,peso,altura,sexo,af;
-
+   private int errores = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,19 +46,36 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
         ok.setOnClickListener(new View.OnClickListener() {
+
+
             @Override
             public void onClick(View view) {
-                sr = (RadioButton) findViewById(radioGroupsexo.getCheckedRadioButtonId());
-                afr = (RadioButton) findViewById(radioGroupAf.getCheckedRadioButtonId());
-                nombre = etnombre.getText().toString();
-                edad = etedad.getText().toString();
-                peso = etpeso.getText().toString();
-                altura = etaltura.getText().toString();
-                sexo = sr.getText().toString();
-                af = afr.getText().toString();
 
-                
+                if(etnombre.getText().toString().isEmpty() || etedad.getText().toString().isEmpty() || etpeso.getText().toString().isEmpty() ||
+                        etaltura.getText().toString().isEmpty() || radioGroupsexo.getCheckedRadioButtonId() == -1|| radioGroupAf.getCheckedRadioButtonId() == -1){
+                    Toast.makeText(getApplicationContext(),"Completa correctamente los datos ;)", Toast.LENGTH_LONG).show();
+                    errores++;
+
+                }else{
+                    errores = 0;
+                }
+
+                if(errores < 1) {
+                    sr = (RadioButton) findViewById(radioGroupsexo.getCheckedRadioButtonId());
+                    afr = (RadioButton) findViewById(radioGroupAf.getCheckedRadioButtonId());
+                    nombre = etnombre.getText().toString();
+                    edad = etedad.getText().toString();
+                    peso = etpeso.getText().toString();
+                    altura = etaltura.getText().toString();
+                    sexo = sr.getText().toString();
+                    af = afr.getText().toString();
+
+                    Toast.makeText(getApplicationContext(),"ok", Toast.LENGTH_LONG).show();
+                }
+
+
 
 
             }
