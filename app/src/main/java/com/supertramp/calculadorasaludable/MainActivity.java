@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 sexo = sr.getText().toString();
                 af = afr.getText().toString();
 
+                
 
 
             }
