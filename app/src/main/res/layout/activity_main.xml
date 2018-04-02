@@ -87,11 +87,15 @@
                 android:textSize="15dp"
                 />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
             <RadioGroup
                 android:id="@+id/radiogroupaf"
                 android:layout_width="match_parent"
-
                 android:layout_height="wrap_content">
+
                 <RadioButton
                     android:id="@+id/baja"
                     android:layout_width="match_parent"
@@ -111,15 +115,12 @@
                     android:text="Alta" />
 
             </RadioGroup>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+
             <EditText
-                android:id="@+id/altura"
+                android:id="@+id/et_altura"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Altura: (cm)"
-                />
+                android:hint="Altura: (cm)" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
