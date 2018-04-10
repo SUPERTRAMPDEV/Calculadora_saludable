@@ -24,5 +24,6 @@ public class Resultados extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "IMC" + String.valueOf(imc.imc()), Toast.LENGTH_LONG).show();
 
 
+
     }
 }
