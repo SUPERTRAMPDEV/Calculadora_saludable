@@ -1,6 +1,7 @@
 package com.supertramp.calculadorasaludable;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -72,7 +73,17 @@ public class MainActivity extends AppCompatActivity {
                     sexo = sr.getText().toString();
                     af = afr.getText().toString();
 
-                    Toast.makeText(getApplicationContext(),"ok", Toast.LENGTH_LONG).show();
+                    Intent  intent  = new Intent(MainActivity.this, Resultados.class);
+
+                    intent.putExtra("nombre", nombre);
+                    intent.putExtra("edad",edad);
+                    intent.putExtra("peso",peso);
+                    intent.putExtra("altura",altura);
+                    intent.putExtra("sexo",sexo);
+                    intent.putExtra("af",af);
+
+                    startActivity(intent);
+
                 }
 
 
