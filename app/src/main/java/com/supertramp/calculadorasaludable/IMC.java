@@ -2,10 +2,10 @@ package com.supertramp.calculadorasaludable;
 
 public class IMC {
     //codigo mal!!
-    private int peso;
-    private int altura;
+    private float peso;
+    private float altura;
 
-    public IMC(int peso, int altura){
+    public IMC(float peso,float altura){
         this.peso = peso;
         this.altura = altura;
     }

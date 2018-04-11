@@ -20,8 +20,8 @@ public class Resultados extends AppCompatActivity {
         sexo = parametros.getString("sexo");
         af = parametros.getString("af");
 
-        IMC imc = new IMC(Integer.parseInt(peso),Integer.parseInt(altura));
-        Toast.makeText(getApplicationContext(), "IMC" + String.valueOf(imc.imc()), Toast.LENGTH_LONG).show();
+        IMC imc = new IMC(Float.parseFloat(peso),Float.parseFloat(altura));
+        Toast.makeText(getApplicationContext(), "IMC: " + String.valueOf(imc.imc()), Toast.LENGTH_LONG).show();
 
 
 
