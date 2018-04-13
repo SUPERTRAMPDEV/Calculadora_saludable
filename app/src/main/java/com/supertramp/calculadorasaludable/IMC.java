@@ -1,7 +1,6 @@
 package com.supertramp.calculadorasaludable;
 
 public class IMC {
-    //codigo mal!!
     private float peso;
     private float altura;
 

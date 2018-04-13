@@ -1,12 +1,23 @@
 package com.supertramp.calculadorasaludable;
 
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.widget.ImageView;
+
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class Resultados extends AppCompatActivity {
 
     private String nombre,edad,peso,altura,sexo,af;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,8 +31,8 @@ public class Resultados extends AppCompatActivity {
         sexo = parametros.getString("sexo");
         af = parametros.getString("af");
 
-        IMC imc = new IMC(Float.parseFloat(peso),Float.parseFloat(altura));
-        Toast.makeText(getApplicationContext(), "IMC: " + String.valueOf(imc.imc()), Toast.LENGTH_LONG).show();
+        IMC imc = new IMC(Float.parseFloat(peso), Float.parseFloat(altura));
+
 
 
 

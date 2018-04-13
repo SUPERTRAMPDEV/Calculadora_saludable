@@ -13,11 +13,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/registros_anteriores"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Registros Anteriores" />
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -25,7 +21,7 @@
 
             <EditText
                 android:id="@+id/et_nombre"
-                android:hint="Nombre:"
+                android:hint="@string/et_nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <TextView
@@ -33,7 +29,7 @@
                 android:layout_height="wrap_content" />
             <EditText
                 android:id="@+id/et_edad"
-                android:hint="Edad:"
+                android:hint="@string/et_edad"
                 android:layout_width="match_parent"
                 android:inputType="number"
                 android:layout_height="wrap_content" />
@@ -42,7 +38,7 @@
                 android:layout_height="wrap_content" />
             <EditText
                 android:id="@+id/et_peso"
-                android:hint="Peso: (kg)"
+                android:hint="@string/et_peso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
@@ -55,7 +51,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sexo:"
+                android:text="@string/tv_sexo"
                 android:gravity="center"
                 android:textSize="15dp"
                 />
@@ -69,20 +65,20 @@
                     android:id="@+id/sexo_hombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hombre" />
+                    android:text="@string/rb_hombre" />
 
                 <RadioButton
                     android:id="@+id/sexo_mujer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Mujer" />
+                    android:text="@string/rb_mujer" />
             </RadioGroup>
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Actividad física:"
+                android:text="@string/tv_af"
                 android:gravity="center"
                 android:textSize="15dp"
                 />
@@ -100,19 +96,19 @@
                     android:id="@+id/baja"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Baja" />
+                    android:text="@string/rb_baja" />
 
                 <RadioButton
                     android:id="@+id/media"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Media/equilibrada" />
+                    android:text="@string/rb_equilibrada" />
 
                 <RadioButton
                     android:id="@+id/alta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Alta" />
+                    android:text="@string/rb_alta" />
 
             </RadioGroup>
 
@@ -121,7 +117,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:hint="Altura: (cm)" />
+                android:hint="@string/et_altura" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

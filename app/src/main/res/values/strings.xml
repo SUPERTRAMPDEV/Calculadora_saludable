@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">CalculadoraSaludable</string>
+    <string name="app_name">Healthy Calc</string>
+    <string name="et_nombre">Name:</string>
+    <string name="et_edad">Age:</string>
+    <string name="et_peso">Weight:(kg)</string>
+    <string name="tv_sexo">Genre:</string>
+    <string name="rb_hombre">Male</string>
+    <string name="rb_mujer">Female</string>
+    <string name="tv_af">Physical activity:</string>
+    <string name="rb_baja">Low</string>
+    <string name="rb_equilibrada">Average / balanced</string>
+    <string name="rb_alta">High</string>
+    <string name="et_altura">Height: (cm)</string>
+    <string name="error">Fill the blanks correctly ;)</string>
+    <string name="tvresult">Your Results</string>
+
+
+
 </resources>

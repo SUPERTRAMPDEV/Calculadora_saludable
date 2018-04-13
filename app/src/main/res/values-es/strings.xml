@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calcu Salud</string>
+
+    <string name="et_nombre">Nombre:</string>
+    <string name="et_edad">Edad:</string>
+    <string name="et_peso">Peso:(kg)</string>
+    <string name="tv_sexo">Sexo:</string>
+    <string name="rb_hombre">Hombre</string>
+    <string name="rb_mujer">Mujer</string>
+    <string name="tv_af">Actividad física:</string>
+    <string name="rb_baja">Baja</string>
+    <string name="rb_equilibrada">Media/equilibrada</string>
+    <string name="rb_alta">Alta</string>
+    <string name="et_altura">Altura: (cm)</string>
+    <string name="error">Llena los datos correctamente ;)</string>
+    <string name="tvresult">Tus resultados</string>
+
+</resources>

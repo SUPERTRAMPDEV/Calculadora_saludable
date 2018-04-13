@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        registros_anteriores = (Button) findViewById(R.id.registros_anteriores);
         ok = (Button) findViewById(R.id.boton);
         etnombre = (EditText) findViewById(R.id.et_nombre);
         etedad = (EditText) findViewById(R.id.et_edad);
@@ -39,11 +38,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences preferences = getSharedPreferences("config", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
 
-        String datos_existes = preferences.getString("datos_existentes", null);
 
-        if(datos_existes == null){
-            registros_anteriores.setVisibility(View.GONE);
-        }
 
 
 
@@ -56,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(etnombre.getText().toString().isEmpty() || etedad.getText().toString().isEmpty() || etpeso.getText().toString().isEmpty() ||
                         etaltura.getText().toString().isEmpty() || radioGroupsexo.getCheckedRadioButtonId() == -1|| radioGroupAf.getCheckedRadioButtonId() == -1){
-                    Toast.makeText(getApplicationContext(),"Completa correctamente los datos ;)", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),R.string.error, Toast.LENGTH_LONG).show();
                     errores++;
 
                 }else{
