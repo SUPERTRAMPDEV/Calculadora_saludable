@@ -32,8 +32,9 @@ public class Resultados extends AppCompatActivity {
         }else{
             TMB_M tmb_m = new TMB_M(getApplicationContext(),Integer.parseInt(peso), Integer.parseInt(altura) , Integer.parseInt(edad), af);
 
-
         }
+
+
 
 
 
