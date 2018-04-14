@@ -1,18 +1,11 @@
 package com.supertramp.calculadorasaludable;
 
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.Toast;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 
 public class Resultados extends AppCompatActivity {
 
@@ -31,8 +24,12 @@ public class Resultados extends AppCompatActivity {
         sexo = parametros.getString("sexo");
         af = parametros.getString("af");
 
-        IMC imc = new IMC(Float.parseFloat(peso), Float.parseFloat(altura));
 
+        IMC imc = new IMC(Float.parseFloat(peso),Float.parseFloat(altura));
+        if(sexo.equals(getResources().getString(R.string.rb_hombre))){
+            TMB_H tmb_h = new TMB_H(getApplicationContext(),Integer.parseInt(peso), Integer.parseInt(altura) , Integer.parseInt(edad), af);
+
+        }
 
 
 
