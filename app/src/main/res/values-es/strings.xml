@@ -15,5 +15,14 @@
     <string name="et_altura">Altura: (cm)</string>
     <string name="error">Llena los datos correctamente ;)</string>
     <string name="tvresult">Tus resultados</string>
+    <string name="tvtitleimc">Tu imc:</string>
+    <string name="tvrecomendacionimc1"> tienes signos de desnutrición te recomendamos subir de peso(peso actual de </string>
+    <string name="tvrecomendacionimc2"> Sigue así :), tienes un peso normal(</string>
+    <string name="tvrecomendacionimc3"> cuidate un poco, tienes sobrepeso ,pero tu puedes solucionarlo, baja de peso :)(peso actual de </string>
+    <string name="tvrecomendacionimc4"> estas obeso, debes bajar de peso pero ¡ya! (peso actual de </string>
+    <string name="tvrecomendacionimc5"> tienes obesidad grado I. Riesgo relativo alto para desarrollar enfermedades cardiovasculares (peso actual de </string>
+    <string name="tvrecomendacionimc6"> tienes obesidad grado II. Riesgo relativo muy alto para el desarrollo de enfermedades cardiovasculares (peso actual de </string>
+    <string name="tvrecomendacionimc7">  tienes obesidad grado III Extrema o Mórbida. Riesgo relativo extremadamente alto para el desarrollo de enfermedades cardiovasculares (peso actual de </string>
+
 
 </resources>

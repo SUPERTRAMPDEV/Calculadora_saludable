@@ -1,19 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Resultados">
 
+
     <TextView
-        android:id="@+id/titulo_imc"
+        android:id="@+id/extra1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/bgcolor"
-        android:fontFamily="sans-serif-condensed"
         android:text="@string/tvresult"
         android:textAlignment="center"
         android:textColor="@color/alttxt"
         android:textSize="35dp" />
-</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/extra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tvtitleimc"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/imcresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/extra2"
+        android:layout_centerHorizontal="true"
+        android:text="nada"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/recomendacion_imc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="148dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>

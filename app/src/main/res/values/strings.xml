@@ -13,7 +13,12 @@
     <string name="et_altura">Height: (cm)</string>
     <string name="error">Fill the blanks correctly ;)</string>
     <string name="tvresult">Your Results</string>
-
-
-
+    <string name="tvtitleimc">Your imc:</string>
+    <string name="tvrecomendacionimc1"> you have signs of malnutrition we recommend you to gain weight (current weight of </string>
+    <string name="tvrecomendacionimc2"> keep it up :), you have a normal weight (current weight of</string>
+    <string name="tvrecomendacionimc3"> take care of yourself, you are overweight, but you can fix it, lose weight:) (current weight of </string>
+    <string name="tvrecomendacionimc4"> you are obese, you must lose weight right now! (current weight of </string>
+    <string name="tvrecomendacionimc5"> you have an obesity grade I. High relative risk for developing cardiovascular diseases (current weight of </string>
+    <string name="tvrecomendacionimc6"> you have an obesity grade II. Very high relative risk for the development of cardiovascular diseases (current weight of </string>
+    <string name="tvrecomendacionimc7"> you have an obesity grade III Extreme or Morbid. Extremely high relative risk for the development of cardiovascular diseases (current weight of </string>
 </resources>
